@@ -6,9 +6,9 @@ const DrinksList = async ({drinks}) => {
     
 
   const drinksElements = drinks.map(drink => (
-    <li key={drink.idDrink}>
+    <div key={drink.idDrink}>
         <Link 
-          className="text-xl font-medium" 
+          className="text-xl font-bold" 
           href ={`/drinks/${drink.idDrink}`}
         >
           <div className="relative h-48 mb-4">
@@ -22,7 +22,7 @@ const DrinksList = async ({drinks}) => {
           </div>
           {drink.strDrink}
         </Link>
-    </li>
+    </div>
   ))
 
   return (
