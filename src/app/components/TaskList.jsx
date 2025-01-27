@@ -1,5 +1,5 @@
 import Link from "next/link"
-import DeleteForm from "./DeleteForm"
+import DeleteFormCustom from "./DeleteFormCustom"
 import { getAllTasks } from "../../../utils/actions"
 
 
@@ -30,7 +30,7 @@ const TaskList = async () => {
               <Link href={`/tasks/${task.id}`} className="btn btn-accent btn-xs ">
                 Edit
               </Link>
-              <DeleteForm id={task.id}/>
+              <DeleteFormCustom id={task.id}/>
             </div>
           </li>
           )
